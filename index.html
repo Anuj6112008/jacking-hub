@@ -50,11 +50,11 @@
     };
   </script>
   <style>
-        .animate-marquee {
+    .animate-marquee {
       animation: marquee 12s linear infinite;
     }
 
-    
+
     nav a {
       position: relative;
       overflow: hidden;
@@ -79,7 +79,7 @@
       transform-origin: left;
     }
 
-    
+
     .ripple-container {
       position: relative;
       overflow: hidden;
@@ -95,7 +95,7 @@
       z-index: 10;
     }
 
-    
+
     .fade-in-section {
       opacity: 0;
       transform: translateY(20px);
@@ -108,7 +108,7 @@
       transform: translateY(0);
     }
 
-    
+
     body::before {
       content: '';
       position: fixed;
@@ -137,6 +137,21 @@
       border-radius: 50%;
     }
 
+    /* For small screens (phones) */
+    @media (max-width: 640px) {
+      .nav-menu {
+        display: block;
+        font-size: 1rem;
+      }
+    }
+
+    /* For medium screens (tablets) */
+    @media (max-width: 1024px) {
+      .nav-menu {
+        font-size: 1.2rem;
+      }
+    }
+
     @keyframes moveBG {
       0% {
         transform: translate(0, 0);
@@ -157,7 +172,7 @@
       }
     }
 
-    
+
     header.scrolled {
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
       background: rgba(255 255 255 / 0.95);
@@ -165,13 +180,13 @@
       transition: background 0.3s ease, box-shadow 0.3s ease;
     }
 
-    
+
     details summary {
       cursor: pointer;
       list-style: none;
     }
 
-   
+
     code {
       background-color: #f3f4f6;
       padding: 0.15rem 0.3rem;
@@ -185,7 +200,7 @@
 
 <body
   class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-500 font-sans relative overflow-x-hidden">
- 
+
   <header id="header"
     class="flex justify-between items-center p-4 border-b dark:border-gray-700 fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 transition-shadow duration-300">
     <div class="flex items-center space-x-2">
@@ -224,10 +239,10 @@
     </div>
   </div>
 
-  
+
   <div id="overlay" class="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm hidden z-30"></div>
 
- 
+
   <nav>
     <div id="navMenu"
       class="fixed top-20 left-0 h-full w-64 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-xl transform -translate-x-full md:translate-x-0 md:static md:flex md:flex-row md:space-x-14 p-8 space-y-6 md:space-y-0 transition-transform duration-500 ease-in-out z-40 rounded-r-xl">
@@ -243,9 +258,9 @@
     </div>
   </nav>
 
- 
+
   <main class="p-8 pt-12 md:pt-24 max-w-7xl mx-auto space-y-16">
-    
+
     <section id="about"
       class="fade-in-section bg-gradient-to-r from-yellow-50 to-yellow-100 dark:from-yellow-900 dark:to-yellow-800 rounded-lg p-8 shadow-lg">
       <h2 class="text-3xl font-bold mb-4 text-primary dark:text-accent tracking-tight select-text">
@@ -258,7 +273,7 @@
       </p>
     </section>
 
-    
+
     <section id="howto"
       class="fade-in-section bg-gradient-to-r from-orange-50 to-orange-100 dark:from-orange-900 dark:to-orange-800 rounded-lg p-8 shadow-lg">
       <h2 class="text-3xl font-bold mb-6 text-primary dark:text-accent tracking-tight select-text">
@@ -310,17 +325,17 @@
       </ol>
     </section>
 
-    
+
     <section id="channels"
       class="fade-in-section bg-gradient-to-r from-indigo-50 to-indigo-100 dark:from-indigo-900 dark:to-indigo-800 rounded-lg p-8 shadow-lg">
       <h2 class="text-3xl font-bold mb-8 text-primary dark:text-accent tracking-tight select-text">
         📡 Free And Popular Jacking Channels
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-        
+
         <a href="https://t.me/+uN8rQGuGSTgzN2Nl" target="_blank" rel="noopener noreferrer"
           class="ripple-container relative bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transform transition hover:scale-105 focus:outline-none focus:ring-4 focus:ring-pink-300 dark:focus:ring-yellow-300"
-          onmousedown="createRipple(event)">🐱‍👤  𝐏𝐓 𓄅 👑☠️</a>
+          onmousedown="createRipple(event)">🐱‍👤 𝐏𝐓 𓄅 👑☠️</a>
 
         <a href="https://t.me/+jcgOSVlxFWtkMjg9" target="_blank" rel="noopener noreferrer"
           class="ripple-container relative bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transform transition hover:scale-105 focus:outline-none focus:ring-4 focus:ring-purple-300 dark:focus:ring-indigo-300"
@@ -330,7 +345,7 @@
           class="ripple-container relative bg-gradient-to-r from-green-400 to-teal-400 hover:from-green-500 hover:to-teal-500 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transform transition hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-300 dark:focus:ring-teal-300"
           onmousedown="createRipple(event)">🐱‍👤Pokkie Toolz</a>
 
-        
+
         <a href="https://t.me/+kNtmNYWJqQxmODhl" target="_blank" rel="noopener noreferrer"
           class="ripple-container relative bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-red-300"
           onmousedown="createRipple(event)">🐱‍👤 SP!DEY 🕸️🚀</a>
@@ -343,72 +358,72 @@
           class="ripple-container relative bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-yellow-300"
           onmousedown="createRipple(event)">🐱‍👤 PYTOONZ</a>
 
-        <a href="https://t.me/the_anonymous_3"" target="_blank" rel="noopener noreferrer"
+        <a href="https://t.me/the_anonymous_3"" target=" _blank" rel="noopener noreferrer"
           class="ripple-container relative bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-cyan-300"
           onmousedown="createRipple(event)">🐱‍👤ᴀɴᴏɴʏᴍᴏᴜꜱ <3 </a>
 
-        <a href="https://t.me/user" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-pink-400 to-rose-500 hover:from-pink-500 hover:to-rose-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-pink-300"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 5</a>
+            <a href="https://t.me/user" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-pink-400 to-rose-500 hover:from-pink-500 hover:to-rose-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-pink-300"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 5</a>
 
-        <a href="https://t.me/ids___6" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-lime-400 to-green-500 hover:from-lime-500 hover:to-green-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-lime-300"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 6</a>
+            <a href="https://t.me/ids___6" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-lime-400 to-green-500 hover:from-lime-500 hover:to-green-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-lime-300"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 6</a>
 
-        <a href="https://t.me/ids___7" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-gray-300"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 7</a>
+            <a href="https://t.me/ids___7" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-gray-300"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 7</a>
 
-        <a href="https://t.me/ids___8" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-indigo-400 to-blue-600 hover:from-indigo-500 hover:to-blue-700 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-indigo-300"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 8</a>
+            <a href="https://t.me/ids___8" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-indigo-400 to-blue-600 hover:from-indigo-500 hover:to-blue-700 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-indigo-300"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 8</a>
 
-        <a href="https://t.me/ids___9" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-fuchsia-400 to-pink-600 hover:from-fuchsia-500 hover:to-pink-700 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-fuchsia-300"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 9</a>
+            <a href="https://t.me/ids___9" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-fuchsia-400 to-pink-600 hover:from-fuchsia-500 hover:to-pink-700 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-fuchsia-300"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 9</a>
 
-        <a href="https://t.me/ids___10" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-orange-300"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 10 </a>
+            <a href="https://t.me/ids___10" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-orange-300"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 10 </a>
 
-        <a href="https://t.me/ids___11" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-amber-300"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 11</a>
+            <a href="https://t.me/ids___11" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-amber-300"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 11</a>
 
-        <a href="https://t.me/ids___12" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-violet-400 to-indigo-500 hover:from-violet-500 hover:to-indigo-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-violet-300"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 12</a>
+            <a href="https://t.me/ids___12" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-violet-400 to-indigo-500 hover:from-violet-500 hover:to-indigo-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-violet-300"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 12</a>
 
-        <a href="https://t.me/ids___13" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-teal-400 to-emerald-500 hover:from-teal-500 hover:to-emerald-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-teal-300"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 13</a>
+            <a href="https://t.me/ids___13" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-teal-400 to-emerald-500 hover:from-teal-500 hover:to-emerald-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-teal-300"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 13</a>
 
-        <a href="https://t.me/ids___14" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-rose-400 to-red-400 hover:from-rose-500 hover:to-red-500 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-rose-300"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 14</a>
+            <a href="https://t.me/ids___14" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-rose-400 to-red-400 hover:from-rose-500 hover:to-red-500 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-rose-300"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 14</a>
 
-        <a href="https://t.me/ids___15" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-neutral-400 to-gray-600 hover:from-neutral-500 hover:to-gray-700 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-neutral-300"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 15</a>
+            <a href="https://t.me/ids___15" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-neutral-400 to-gray-600 hover:from-neutral-500 hover:to-gray-700 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-neutral-300"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 15</a>
 
-        <a href="https://t.me/ids___16" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-sky-400 to-cyan-500 hover:from-sky-500 hover:to-cyan-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-sky-300"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 16</a>
+            <a href="https://t.me/ids___16" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-sky-400 to-cyan-500 hover:from-sky-500 hover:to-cyan-600 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-sky-300"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 16</a>
 
-        <a href="https://t.me/ids___17" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-blue-900 to-indigo-900 hover:from-blue-800 hover:to-indigo-800 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-blue-800"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 17</a>
+            <a href="https://t.me/ids___17" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-blue-900 to-indigo-900 hover:from-blue-800 hover:to-indigo-800 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-blue-800"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 17</a>
 
-        <a href="https://t.me/ids___18" target="_blank" rel="noopener noreferrer"
-          class="ripple-container relative bg-gradient-to-r from-green-800 to-emerald-800 hover:from-green-700 hover:to-emerald-700 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-green-700"
-          onmousedown="createRipple(event)">🐱‍👤 #channel 18</a>
+            <a href="https://t.me/ids___18" target="_blank" rel="noopener noreferrer"
+              class="ripple-container relative bg-gradient-to-r from-green-800 to-emerald-800 hover:from-green-700 hover:to-emerald-700 text-white font-extrabold py-3 px-6 rounded-xl shadow-lg transition transform hover:scale-105 focus:ring-4 focus:ring-green-700"
+              onmousedown="createRipple(event)">🐱‍👤 #channel 18</a>
       </div>
 
     </section>
   </main>
 
   <script>
-    
+
     const themeToggle = document.getElementById('themeToggle');
     const htmlElement = document.documentElement;
 
@@ -422,7 +437,7 @@
       }
     }
 
-    
+
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       setTheme(savedTheme);
@@ -438,7 +453,7 @@
       }
     });
 
-    
+
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
     const overlay = document.getElementById('overlay');
@@ -469,7 +484,7 @@
 
     overlay.addEventListener('click', closeMenu);
 
-    
+
     function createRipple(event) {
       const button = event.currentTarget;
       const circle = document.createElement('span');
@@ -485,7 +500,7 @@
       });
     }
 
-    
+
     const faders = document.querySelectorAll('.fade-in-section');
 
     const appearOptions = {
@@ -505,7 +520,7 @@
       appearOnScroll.observe(fader);
     });
 
-    
+
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 20) {
